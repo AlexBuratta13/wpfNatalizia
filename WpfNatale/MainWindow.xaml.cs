@@ -96,5 +96,16 @@ namespace WpfNatale
             }
             lblRisultato.Content = $"sono stati inseriti {Npari} numeri pari e {Ndisp} numeri dispari";
         }
+
+        private void BtnOnOff_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            txtN1.IsEnabled = false;
+            txtN2.IsEnabled = false;
+            txtN3.IsEnabled = false;
+            txtN4.IsEnabled = false;
+            txtN5.IsEnabled = false;
+            txtN6.IsEnabled = false;
+            btnCalcola.IsEnabled = false;
+        }
     }
 }
